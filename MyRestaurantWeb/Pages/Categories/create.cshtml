@@ -1,0 +1,20 @@
+﻿@page
+@model MyRestaurantWeb.Pages.Categories.createModel
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">ایجاد دسته جدید</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            نام : 
+            <input asp-for=@Model.Category.Name/>
+        </div>
+        <div class="mb-3">
+            ترتیب نمایش : 
+            <input asp-for=@Model.Category.DisplayOrder/>
+        </div>
+        <button type="submit" class="btn btn-success" style="width:150px;">بساز</button>
+    </div>
+</form>
